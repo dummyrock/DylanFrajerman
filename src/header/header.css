@@ -1,0 +1,48 @@
+/* Header.css */
+
+.header {
+  background-color: grey; /* blue header */
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;              /* normal text color */
+  text-decoration: none;     /* remove underline */
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+/* Hover effect: slightly lighter than original */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.nav-link:visited {
+  text-decoration: none;     
+  color: #d1d5db; /* light grayish-white, adjust as needed */
+}
+
+.nav-link:hover {
+  color: #e0e0e0; /* lighter blue on hover */
+}

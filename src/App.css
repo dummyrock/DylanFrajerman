@@ -1,0 +1,56 @@
+/* App.css */
+
+/* Make the whole page gray */
+body {
+  background-color: #f3f4f6; /* light gray */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #1e40af; /* blue */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header title */
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Header subtitle */
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Main content area */
+main {
+  padding: 2rem;
+}
+
+/* White box container for tiles */
+main > div {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Title inside the white box */
+main h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Tile container */
+main > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}

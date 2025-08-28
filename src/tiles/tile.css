@@ -1,0 +1,31 @@
+.project-card {
+  background: lightgray;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  max-width: 300px;
+  min-width: 250px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  /* Smooth hover animation */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #fff;
+  text-align: center; /* center the title */
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #ddd;
+  flex-grow: 1;
+  text-align: center; /* center the description */
+}

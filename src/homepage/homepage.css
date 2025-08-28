@@ -1,0 +1,103 @@
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #fff;
+  background: center/cover no-repeat;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  pointer-events: none; /* lets clicks pass through */
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Featured projects section */
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 1rem 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 24px;
+  justify-content: center;
+  justify-items: center;
+  margin: 4% auto;
+}
+
+.project-card:hover {
+  transform: scale(1.07); /* slightly bigger */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* bigger shadow */
+}
+
+.project-image {
+  width: 100%;       /* full width of card */
+  height: 50%;     /* fixed height */
+  object-fit: cover; /* crop instead of stretching */
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.project-card {
+  background: lightgray;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  max-width: 300px;
+  min-width: 250px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  /* Smooth hover animation */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: black;
+  text-align: center; /* center the title */
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: black;
+  flex-grow: 1;
+  text-align: center; /* center the description */
+}
+
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* makes the link take the full width */
+}
+
+/* Remove underline for all states */
+.project-card-link:hover,
+.project-card-link:focus,
+.project-card-link:active,
+.project-card-link:visited {
+  text-decoration: none;
+}

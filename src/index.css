@@ -1,0 +1,102 @@
+/* =========================
+   Base Reset + Variables
+   ========================= */
+:root {
+  --bg: #f3f4f6;          /* soft gray background */
+  --surface: #ffffff;     /* card/background surfaces */
+  --text: #111827;        /* near-black text */
+  --muted: #6b7280;       /* secondary text */
+  --brand: #2563eb;       /* accent color (blue) */
+  --radius: 1rem;         /* large rounding */
+  --shadow: 0 10px 20px rgba(0,0,0,.08), 0 3px 6px rgba(0,0,0,.06);
+  --focus: 2px solid #2563eb;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+html:focus-within { scroll-behavior: smooth; }
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button { cursor: pointer; }
+
+/* =========================
+   Body + Typography
+   ========================= */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1 { font-size: clamp(1.8rem, 2.5vw + 1rem, 2.75rem); }
+h2 { font-size: clamp(1.5rem, 2vw + .5rem, 2rem); }
+h3 { font-size: 1.25rem; }
+
+p + p { margin-top: .75rem; }
+
+/* Links */
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+a:focus-visible {
+  outline: var(--focus);
+  outline-offset: 2px;
+}
+
+/* =========================
+   Layout Helpers
+   ========================= */
+.container {
+  width: min(1100px, 100% - 2rem);
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+.center {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.grid-center {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+/* =========================
+   UI Elements
+   ================
+*/
+.body{
+  background-color: grey;
+}
