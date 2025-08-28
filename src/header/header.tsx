@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom"; // we’ll use React Router for navigation
 import "./Header.css";
 import resumePDF from "../assets/Dylan Frajerman.pdf";

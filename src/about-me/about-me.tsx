@@ -1,4 +1,3 @@
-import React from "react";
 import "./about-me.css";
 import myPhoto from "../assets/professionalImage.jpg"; // Replace with the path to your image
 

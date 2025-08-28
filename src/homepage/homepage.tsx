@@ -1,4 +1,3 @@
-import React from "react";
 import Tile from "../tiles/tile";
 import "./Homepage.css";
 import eaglesStadium from "../assets/eagles-stadium.jpg";
